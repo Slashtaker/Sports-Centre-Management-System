@@ -1,0 +1,213 @@
+{
+ "next_id": 10,
+ "members": [
+  {
+   "id": 1,
+   "name": "Aiman Hakim",
+   "phone": "012-3456789",
+   "dob": "2001-03-12",
+   "plan": "Monthly",
+   "expires": "2026-12-01"
+  },
+  {
+   "id": 2,
+   "name": "Mei Ling Tan",
+   "phone": "013-2223344",
+   "dob": "1995-07-30",
+   "plan": "VIP",
+   "expires": "2027-05-30"
+  },
+  {
+   "id": 3,
+   "name": "Ravi Kumar",
+   "phone": "016-7788990",
+   "dob": "1988-01-05",
+   "plan": "Annual",
+   "expires": "2027-02-09"
+  },
+  {
+   "id": 4,
+   "name": "Siti Aminah",
+   "phone": "011-5566778",
+   "dob": "2008-09-14",
+   "plan": "Pay-As-You-Go",
+   "expires": "-"
+  }
+ ],
+ "bookings": [
+  {
+   "id": 1,
+   "court": "B1",
+   "date": "2026-11-11",
+   "start": 18,
+   "hours": 2,
+   "member": 1,
+   "paid": 36.0
+  },
+  {
+   "id": 2,
+   "court": "F1",
+   "date": "2026-11-11",
+   "start": 20,
+   "hours": 1,
+   "member": 0,
+   "paid": 80.0
+  }
+ ],
+ "coaches": [
+  {
+   "id": 1,
+   "name": "Coach Daniel",
+   "rate": 0.3,
+   "hours": 0,
+   "commission": 0.0
+  },
+  {
+   "id": 2,
+   "name": "Coach Farah",
+   "rate": 0.35,
+   "hours": 0,
+   "commission": 0.0
+  }
+ ],
+ "classes": [
+  {
+   "id": 1,
+   "name": "Badminton Clinic",
+   "type": "Group",
+   "coach": 1,
+   "time": "Sat 09:00",
+   "hours": 2,
+   "max": 8,
+   "fee": 30.0,
+   "enrolled": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": 2,
+   "name": "Yoga Flow",
+   "type": "Group",
+   "coach": 2,
+   "time": "Sun 08:00",
+   "hours": 1,
+   "max": 12,
+   "fee": 20.0,
+   "enrolled": [
+    3
+   ]
+  },
+  {
+   "id": 3,
+   "name": "Private Futsal Drill",
+   "type": "Private",
+   "coach": 1,
+   "time": "Wed 17:00",
+   "hours": 1,
+   "max": 1,
+   "fee": 60.0,
+   "enrolled": []
+  }
+ ],
+ "rankings": {
+  "Badminton": [
+   {
+    "member": 1,
+    "rating": 1024,
+    "won": 3,
+    "lost": 1
+   },
+   {
+    "member": 2,
+    "rating": 1011,
+    "won": 2,
+    "lost": 2
+   },
+   {
+    "member": 3,
+    "rating": 985,
+    "won": 1,
+    "lost": 2
+   },
+   {
+    "member": 4,
+    "rating": 980,
+    "won": 1,
+    "lost": 2
+   }
+  ],
+  "Futsal": [],
+  "Table Tennis": []
+ },
+ "products": [
+  {
+   "id": 1,
+   "name": "Mineral Water",
+   "price": 2.0,
+   "stock": 50
+  },
+  {
+   "id": 2,
+   "name": "Isotonic Drink",
+   "price": 4.0,
+   "stock": 40
+  },
+  {
+   "id": 3,
+   "name": "Shuttlecock Tube",
+   "price": 35.0,
+   "stock": 15
+  },
+  {
+   "id": 4,
+   "name": "Grip Tape",
+   "price": 8.0,
+   "stock": 25
+  },
+  {
+   "id": 5,
+   "name": "Sports Towel",
+   "price": 15.0,
+   "stock": 12
+  },
+  {
+   "id": 6,
+   "name": "Energy Bar",
+   "price": 3.5,
+   "stock": 30
+  }
+ ],
+ "payments": [
+  {
+   "date": "2026-11-11",
+   "category": "Court Rental",
+   "amount": 36.0,
+   "reference": "Booking #1"
+  },
+  {
+   "date": "2026-11-11",
+   "category": "Court Rental",
+   "amount": 80.0,
+   "reference": "Booking #2"
+  },
+  {
+   "date": "2026-11-11",
+   "category": "Retail",
+   "amount": 11.0,
+   "reference": "POS sale"
+  },
+  {
+   "date": "2026-11-11",
+   "category": "Membership",
+   "amount": 60.0,
+   "reference": "Monthly - Aiman Hakim"
+  },
+  {
+   "date": "2026-11-10",
+   "category": "Coaching",
+   "amount": 50.0,
+   "reference": "Badminton Clinic"
+  }
+ ]
+}
