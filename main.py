@@ -9,10 +9,8 @@ class SportsManagementSystem:
 		# Create the main window
 		self.root = tkinter.Tk()
 		self.root.title(self.name + " v" + self.version)
-
-		# Create a button to test the Finance module
-		test_button = tkinter.Button(self.root, text="Test Finance Module", command=Finance.test)
-		test_button.pack(pady=20)
+		self.root.geometry("1300x700")
+		
 
 		# Start the main event loop
 		self.root.mainloop()
