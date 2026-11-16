@@ -1,3 +1,16 @@
 # Facility & Court Booking Module: provide visual calendar grid showing court/field
 # availability per hour, broken down by zone, court number, or sport type.
 # LEE WEI CHERN
+
+class BookingManagement:
+
+    def __init__(self):
+
+        # fill in the venue
+        self.venue = []
+        self.sport = []
+
+        self.max_hour = 3
+        self.min_hour = 1
+
+        
