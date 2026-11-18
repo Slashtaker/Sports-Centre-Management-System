@@ -1,4 +1,4 @@
-import tkinter as tk , Finance
+import tkinter as tk , Finance, PlayerRanking, CCmanagement, FCbooking, MembershipRegistration
 from tkinter import ttk, messagebox
 
 class SportsManagementSystem:
@@ -12,31 +12,25 @@ class SportsManagementSystem:
         # Create the main window
         self.root.title(self.name + " v" + self.version)
 
+        self.FinanceManagement = Finance.FinanceManagement()
+        self.PlayerRanking = PlayerRanking.PlayerRanking()
+        self.BookingManagement = FCbooking.BookingManagement()
+        self.CoachingManagement = CCmanagement.CoachingManagement()
+        self.MembershipManagement = MembershipRegistration.MembershipRegistration()
+        
+        
 
         self.notebook = ttk.Notebook(self.root)   # pack it later in admin(), after login
 
     def draw_tab(self):
-        # tab 1: court booking
-        tab1 = ttk.Frame(self.notebook, padding=10)
-        self.notebook.add(tab1, text="Court Booking")
-
-        # tab 2: membership
-        tab2 = ttk.Frame(self.notebook, padding=10)
-        self.notebook.add(tab2, text="Membership")
-
-        # tab 3: coaching and classes
-        tab3 = ttk.Frame(self.notebook, padding=10)
-        self.notebook.add(tab3, text="Coaching & Classes")
-
-        # ---------- tab 4: rankings
-        tab4 = ttk.Frame(self.notebook, padding=10)
-        self.notebook.add(tab4, text="Rankings")
-
-        # ---------- tab 5: billing and finance
-        tab5 = ttk.Frame(self.notebook, padding=10)
-        self.notebook.add(tab5, text="Billing & Finance")
 
 
+            
+        self.FinanceManagement.draw_tab(self.notebook)
+        self.PlayerRanking.draw_tab(self.notebook)
+        self.BookingManagement.draw_tab(self.notebook)
+        self.CoachingManagement.draw_tab(self.notebook)
+        self.MembershipManagement.draw_tab(self.notebook)
 
     def run(self):
 

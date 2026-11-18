@@ -2,6 +2,8 @@
 # availability per hour, broken down by zone, court number, or sport type.
 # LEE WEI CHERN
 
+from tkinter import ttk
+
 class BookingManagement:
 
     def __init__(self):
@@ -11,6 +13,9 @@ class BookingManagement:
         self.sport = []
 
         self.max_hour = 3
-        self.min_hour = 1
 
+        self.min_hour = 1
         
+    def draw_tab(self, notebook):
+        tab1 = ttk.Frame(notebook, padding=10)
+        notebook.add(tab1, text="Court Booking")	
