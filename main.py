@@ -17,20 +17,18 @@ class SportsManagementSystem:
         self.BookingManagement = FCbooking.BookingManagement()
         self.CoachingManagement = CCmanagement.CoachingManagement()
         self.MembershipManagement = MembershipRegistration.MembershipRegistration()
-        
-        
+
+
 
         self.notebook = ttk.Notebook(self.root)   # pack it later in admin(), after login
 
     def draw_tab(self):
 
-
-            
-        self.FinanceManagement.draw_tab(self.notebook)
-        self.PlayerRanking.draw_tab(self.notebook)
         self.BookingManagement.draw_tab(self.notebook)
         self.CoachingManagement.draw_tab(self.notebook)
+        self.PlayerRanking.draw_tab(self.notebook)
         self.MembershipManagement.draw_tab(self.notebook)
+        self.FinanceManagement.draw_tab(self.notebook)
 
     def run(self):
 

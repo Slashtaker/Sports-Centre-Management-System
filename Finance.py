@@ -19,9 +19,17 @@ class FinanceManagement:
 		self.payment_methods = ["Cash", "Credit Card", "Debit Card", "Mobile Payment"]
 
 	def draw_tab(self, notebook):
-		# ---------- tab 5: billing and finance
+		# tab 5: billing and finance
 		tab5 = ttk.Frame(notebook, padding=10)
 		notebook.add(tab5, text="Billing & Finance")
+
+		payment_combobox = ttk.Combobox(tab5, values=self.payment_methods)
+		payment_combobox.grid(row=0, column=0, state="readonly")
+		payment_combobox.set(self.payment_methods[0])
+
+		payment_combobox.bind("<<ComboboxSelected>>", self.on_payment_selected)
+
+
 
 	def calculate_revenue(self, court_rentals, coaching_fees, retail_sales, membership_fees):
 		# Calculate total revenue for each category
@@ -48,9 +56,7 @@ class FinanceManagement:
 			"tax_amount": tax_amount,
 			"total_revenue_after_tax": total_revenue_after_tax
 		}
-	
 
-
-
-	
-
+	def on_payment_selected(self, event):
+		selected_payment = event.widget.get()
+		print(f"Selected payment: {selected_payment}")
