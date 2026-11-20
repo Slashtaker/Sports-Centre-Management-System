@@ -1,5 +1,12 @@
-import tkinter as tk , Finance, PlayerRanking, CCmanagement, FCbooking, MembershipRegistration
-from tkinter import ttk, messagebox
+import tkinter as tk
+from tkinter import ttk
+
+import CCmanagement
+import FCbooking
+import Finance
+import MembershipRegistration
+import PlayerRanking
+
 
 class SportsManagementSystem:
     def __init__(self):
@@ -60,16 +67,18 @@ class SportsManagementSystem:
         self.root.wait_window(login_frame)
 
     def check_login(self, frame, user_entry, pass_entry):
+        frame.destroy()
 
-        if user_entry.get() == "admin" and pass_entry.get() == "1234":
-            self.is_admin = True
-            frame.destroy()
-
-        elif user_entry.get() == "user" and pass_entry.get() == "1234":
-            frame.destroy()
-
-        else:
-            messagebox.showerror("Login failed", "Wrong username or password")
+        # remove the commend after finish the work
+#         if user_entry.get() == "admin" and pass_entry.get() == "1234":
+#            self.is_admin = True
+#             frame.destroy()
+#
+#         elif user_entry.get() == "user" and pass_entry.get() == "1234":
+#             frame.destroy()
+#
+#         else:
+#             messagebox.showerror("Login failed", "Wrong username or password")
 
 
 
