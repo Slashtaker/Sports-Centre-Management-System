@@ -145,7 +145,7 @@
    "id": 1,
    "name": "Mineral Water",
    "price": 2.0,
-   "stock": 50
+   "stock": 47
   },
   {
    "id": 2,
@@ -208,6 +208,24 @@
    "category": "Coaching",
    "amount": 50.0,
    "reference": "Badminton Clinic"
+  },
+  {
+   "date": "2026-11-18",
+   "category": "Retail",
+   "amount": 2.0,
+   "reference": "POS sale - Walk-in guest (Cash)"
+  },
+  {
+   "date": "2026-11-18",
+   "category": "Retail",
+   "amount": 2.0,
+   "reference": "POS sale - Walk-in guest (Cash)"
+  },
+  {
+   "date": "2026-11-19",
+   "category": "Retail",
+   "amount": 2.0,
+   "reference": "POS sale - Walk-in guest (E-wallet)"
   }
  ]
 }
