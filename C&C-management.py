@@ -346,3 +346,4 @@ def open_coaching_module(parent = None):
 # Runs only when this file executed directly
 if __name__ == "__main__":
     open_coaching_module()
+    print("Hello WOrld")
